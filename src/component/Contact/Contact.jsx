@@ -16,11 +16,12 @@ export default function Contact() {
             <div className="col-lg-6 col-xl-5">
               <div className="section-title-contact text-center mb-60">
                 <h1 className="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                  Get In Touch
+                  Contact Us
                 </h1>
                 <p className="wow fadeInUp" data-wow-delay=".4s">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor
+                  We’d love to hear from you! Whether you have a question, need
+                  support, or are ready to start your next project, our team is
+                  here to help.
                 </p>
               </div>
             </div>

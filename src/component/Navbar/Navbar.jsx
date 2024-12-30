@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./navbar-03.css";
 import { Link } from "react-scroll";
 export default function Navbar() {
@@ -6,12 +6,30 @@ export default function Navbar() {
   const handleNavbar = () => {
     btnNavbar.current.classList.toggle("active");
   };
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Check if scroll position is greater than 50
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
-      <section className="navbar-area navbar-three fixed-top ">
+      <section
+        className={`navbar-area navbar-three fixed-top ${
+          isScrolled
+            ? "bg-white/70 backdrop-blur-md shadow-md" // When scrolled: Transparent white, blurred background, and shadow
+            : "bg-transparent"
+        } `}
+        style={{ transition: " 0.7s" }}
+      >
         <div className="container">
           <div className="row">
-            <div className="col-lg-12">
+            <div className="col-lg-12  ">
               <nav className="navbar navbar-expand-lg">
                 <a className="navbar-brand" href="javascript:void(0)">
                   <img
@@ -19,7 +37,7 @@ export default function Navbar() {
                     alt="Logo"
                     style={{
                       width: "200px",
-                      height: "90px",
+                      height: "70px",
                       backgroundImage: "",
                     }}
                   />
@@ -45,22 +63,10 @@ export default function Navbar() {
                 >
                   <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
-                      <a
-                        className="page-scroll active"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#sub-nav5"
-                        aria-controls="sub-nav5"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                        href="javascript:void(0)"
-                      >
-                        Home
-                        <div className="sub-nav-toggler">
-                          <span>
-                            <i className="lni lni-chevron-down" />
-                          </span>
-                        </div>
-                      </a>
+                      <Link to="Home">Home</Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to="OurCompany">About us</Link>
                     </li>
                     <li className="nav-item">
                       <Link to="service">Services</Link>
@@ -70,9 +76,6 @@ export default function Navbar() {
                     </li>
                     <li className="nav-item">
                       <Link to="contact">Contact us</Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link href="javascript:void(0)">About us</Link>
                     </li>
                   </ul>
                 </div>

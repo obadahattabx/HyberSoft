@@ -40,24 +40,6 @@ export default function Home() {
                           typesetting industry. Lorem Ipsum has been the
                           industry's standard.
                         </p>
-                        <ul className="carousel-btn rounded-buttons">
-                          <li>
-                            <a
-                              className="btn primary-btn rounded-full"
-                              href="javascript:void(0)"
-                            >
-                              GET STARTED
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              className="btn primary-btn-outline rounded-full"
-                              href="javascript:void(0)"
-                            >
-                              DOWNLOAD
-                            </a>
-                          </li>
-                        </ul>
                       </div>
                     </div>
                     {/* row */}

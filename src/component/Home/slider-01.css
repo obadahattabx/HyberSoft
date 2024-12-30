@@ -1,29 +1,113 @@
 /* ===== Buttons Css ===== */
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .primary-btn {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .primary-btn {
   background: var(--primary);
   color: var(--white);
   box-shadow: var(--shadow-2);
 }
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .active.primary-btn, .slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .primary-btn:hover, .slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .primary-btn:focus {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .active.primary-btn,
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .primary-btn:hover,
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .primary-btn:focus {
   background: var(--primary-dark);
   color: var(--white);
   box-shadow: var(--shadow-4);
 }
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .deactive.primary-btn {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .deactive.primary-btn {
   background: var(--gray-4);
   color: var(--dark-3);
   pointer-events: none;
 }
 
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .primary-btn-outline {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .primary-btn-outline {
   border-color: var(--primary);
   color: var(--primary);
 }
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .active.primary-btn-outline, .slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .primary-btn-outline:hover, .slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .primary-btn-outline:focus {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .active.primary-btn-outline,
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .primary-btn-outline:hover,
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .primary-btn-outline:focus {
   background: var(--primary-dark);
   color: var(--white);
 }
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .deactive.primary-btn-outline {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .deactive.primary-btn-outline {
   color: var(--dark-3);
   border-color: var(--gray-4);
   pointer-events: none;
@@ -33,7 +117,6 @@
 .slider-one .bd-example .carousel .carousel-inner {
   background-color: var(--primary);
   /* background-image: url(../../assets/images/slider/1.jpg); */
-
 }
 .slider-one .bd-example .carousel .carousel-inner .carousel-item {
   height: 100vh;
@@ -59,14 +142,19 @@
   height: 100%;
   width: 100%;
   background-color: var(--primary);
-  opacity: 0.8;
+  opacity: 0.2;
 }
 @media (max-width: 767px) {
   .slider-one .bd-example .carousel .carousel-inner .carousel-item {
     height: 400px;
   }
 }
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption {
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
@@ -77,58 +165,129 @@
   width: 100%;
   left: 0;
 }
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-title {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-title {
   font-size: 44px;
   font-weight: 700;
   color: var(--white);
   line-height: 55px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-title {
+  .slider-one
+    .bd-example
+    .carousel
+    .carousel-inner
+    .carousel-item
+    .carousel-caption
+    .carousel-title {
     font-size: 35px;
     line-height: 42px;
   }
 }
 @media (max-width: 767px) {
-  .slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-title {
+  .slider-one
+    .bd-example
+    .carousel
+    .carousel-inner
+    .carousel-item
+    .carousel-caption
+    .carousel-title {
     font-size: 24px;
     line-height: 32px;
   }
 }
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .text {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .text {
   color: var(--white);
   display: block;
   margin: 20px 0;
 }
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li {
   display: inline-block;
   margin: 16px 8px 0;
 }
 @media (max-width: 767px) {
-  .slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li {
+  .slider-one
+    .bd-example
+    .carousel
+    .carousel-inner
+    .carousel-item
+    .carousel-caption
+    .carousel-btn
+    li {
     margin: 16px 3px 0;
   }
 }
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .primary-btn {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .primary-btn {
   background-color: var(--white);
   color: var(--primary);
   border: 1px solid transparent;
 }
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .primary-btn:hover {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .primary-btn:hover {
   background-color: transparent;
   border-color: var(--white);
   color: var(--white);
 }
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .primary-btn-outline {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .primary-btn-outline {
   border-color: var(--white);
   color: var(--white);
 }
-.slider-one .bd-example .carousel .carousel-inner .carousel-item .carousel-caption .carousel-btn li .primary-btn-outline:hover {
+.slider-one
+  .bd-example
+  .carousel
+  .carousel-inner
+  .carousel-item
+  .carousel-caption
+  .carousel-btn
+  li
+  .primary-btn-outline:hover {
   border-color: transparent;
   background-color: var(--white);
   color: var(--primary);
 }
-.slider-one .bd-example .carousel .carousel-control-prev, .slider-one .bd-example .carousel .carousel-control-next {
+.slider-one .bd-example .carousel .carousel-control-prev,
+.slider-one .bd-example .carousel .carousel-control-next {
   top: 50%;
   width: 55px;
   height: 55px;
@@ -153,18 +312,21 @@
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
 }
-.slider-one .bd-example .carousel .carousel-control-prev:hover, .slider-one .bd-example .carousel .carousel-control-next:hover {
+.slider-one .bd-example .carousel .carousel-control-prev:hover,
+.slider-one .bd-example .carousel .carousel-control-next:hover {
   background-color: var(--white);
   color: var(--primary);
   border-color: transparent;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .slider-one .bd-example .carousel .carousel-control-prev, .slider-one .bd-example .carousel .carousel-control-next {
+  .slider-one .bd-example .carousel .carousel-control-prev,
+  .slider-one .bd-example .carousel .carousel-control-next {
     left: 30px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .slider-one .bd-example .carousel .carousel-control-prev, .slider-one .bd-example .carousel .carousel-control-next {
+  .slider-one .bd-example .carousel .carousel-control-prev,
+  .slider-one .bd-example .carousel .carousel-control-next {
     left: 30px;
     width: 50px;
     height: 50px;
@@ -172,7 +334,8 @@
   }
 }
 @media (max-width: 767px) {
-  .slider-one .bd-example .carousel .carousel-control-prev, .slider-one .bd-example .carousel .carousel-control-next {
+  .slider-one .bd-example .carousel .carousel-control-prev,
+  .slider-one .bd-example .carousel .carousel-control-next {
     left: 20px;
     width: 40px;
     height: 40px;
@@ -232,5 +395,3 @@
 .slider-one .bd-example .carousel .carousel-indicators li:hover {
   opacity: 1;
 }
-
-

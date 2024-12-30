@@ -1,6 +1,5 @@
-
-import './Ourcompany.css';
-import img from '/src/assets/images/company/about.jpg'
+import "./Ourcompany.css";
+import img from "/src/assets/images/company/about.jpg";
 export default function Ourcompany() {
   return (
     <>
@@ -13,25 +12,18 @@ export default function Ourcompany() {
               </div>
             </div>
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              <h1 className="mb-4">#1 Place To Find The Perfect Property</h1>
+              <h1 className="mb-4"> About Our Company</h1>
               <p className="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                sed stet lorem sit clita duo justo magna dolore erat amet
+                At HyberSoft, we specialise in delivering high-quality, custom
+                web development solutions that meet your business needs. Our
+                team of expert developers and designers works tirelessly to
+                create clean, modern, and responsive websites that provide a
+                seamless user experience. Whether you're looking to build a
+                brand-new website, redesign an existing one, or develop a web
+                application, we are here to turn your ideas into reality.
               </p>
-              <p>
-                <i className="fa fa-check text-primary me-3" />
-                Tempor erat elitr rebum at clita
-              </p>
-              <p>
-                <i className="fa fa-check text-primary me-3" />
-                Aliqu diam amet diam et eos
-              </p>
-              <p>
-                <i className="fa fa-check text-primary me-3" />
-                Clita duo justo magna dolore erat amet
-              </p>
-              <a className="btn btn-primary py-3 px-5 mt-3" href>
+
+              <a className="btn btn-primary py-3 px-5 mt-3 d-none" href>
                 Read More
               </a>
             </div>
