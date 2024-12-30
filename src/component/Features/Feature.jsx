@@ -1,9 +1,12 @@
-import { FaLaptopCode } from "react-icons/fa6";
 import "./service-02.css";
-import { MdOutlineDesignServices } from "react-icons/md";
-import { LuLayoutDashboard } from "react-icons/lu";
-import { IoLayersSharp } from "react-icons/io5";
-import { GrCode } from "react-icons/gr";
+import { MdDevices, MdOutlineDesignServices } from "react-icons/md";
+
+import { GrUpdate } from "react-icons/gr";
+
+import { RiMoneyDollarCircleFill } from "react-icons/ri";
+import { PiMaskHappyFill } from "react-icons/pi";
+import { BiCustomize } from "react-icons/bi";
+import { LuLeafyGreen } from "react-icons/lu";
 export default function Services() {
   const d = `M18.7,4.6c-0.9,0-1.5-0.7-1.6-1.5s0.7-1.5,1.5-1.6s1.5,0.7,1.6,1.5l0,0C20.2,3.9,19.5,4.6,18.7,4.6z M18.7,12.8
 	c-0.9,0-1.5-0.7-1.6-1.5s0.7-1.5,1.5-1.6s1.5,0.7,1.6,1.5l0,0C20.2,12.1,19.5,12.8,18.7,12.8L18.7,12.8z M18.7,21.1
@@ -45,12 +48,11 @@ export default function Services() {
             <div className="row">
               <div className="col-12">
                 <div className="content">
-                  <h3>What we offer?</h3>
-                  <h2 className="fw-bold">What services we provide</h2>
+                  <h2 className="fw-bold">Why Choose Us</h2>
                   <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form.
+                    Choose us for innovative, customized web solutions, expert
+                    design, reliable support, and affordable pricing that
+                    elevates your online presence.
                   </p>
                 </div>
               </div>
@@ -112,12 +114,16 @@ export default function Services() {
                 </svg>
                 <span className="serial">01</span>
                 <div className="service-icon">
-                  <MdOutlineDesignServices />
+                  <LuLeafyGreen />
                 </div>
-                <h3>Graphics Design</h3>
+                <h3>Clean & Modern Design</h3>
                 <p>
-                  How you transform your business as tech, consumer, habits
-                  industry dynamic change, Find out from.
+                  Our designs are a blend of simplicity and elegance, tailored
+                  to align with contemporary trends. We focus on delivering a
+                  visually striking and clutter-free layout that ensures your
+                  brand's message is communicated effectively. With attention to
+                  detail and modern aesthetics, we create designs that elevate
+                  your digital presence and captivate your audience.
                 </p>
               </div>
               {/* End Single Service */}
@@ -172,12 +178,16 @@ export default function Services() {
                 </svg>
                 <span className="serial">02</span>
                 <div className="service-icon">
-                  <LuLayoutDashboard />
+                  <BiCustomize />
                 </div>
-                <h3>Product Design</h3>
+                <h3>Completely Customizable</h3>
                 <p>
-                  How you transform your business as tech, consumer, habits
-                  industry dynamic change, Find out from.
+                  We understand that every business is unique, and your website
+                  should reflect that. Our solutions are fully customizable,
+                  giving you the freedom to tailor every element to match your
+                  brand's identity and goals. From layouts to functionality, we
+                  ensure that your website is as unique as your vision,
+                  providing flexibility and personalization that sets you apart.
                 </p>
               </div>
               {/* End Single Service */}
@@ -232,12 +242,16 @@ export default function Services() {
                 </svg>
                 <span className="serial">03</span>
                 <div className="service-icon">
-                  <IoLayersSharp />
+                  <GrUpdate />
                 </div>
-                <h3>UI &amp; UX Design</h3>
+                <h3>Regular Updates</h3>
                 <p>
-                  How you transform your business as tech, consumer, habits
-                  industry dynamic change, Find out from.
+                  We ensure your website remains modern and fully functional
+                  with consistent updates. From implementing the latest
+                  technologies to refining features, we keep your platform
+                  secure, optimized, and aligned with industry trends. Regular
+                  updates mean your website evolves with your business, staying
+                  relevant and delivering the best experience to your audience.
                 </p>
               </div>
               {/* End Single Service */}
@@ -292,12 +306,15 @@ export default function Services() {
                 </svg>
                 <span className="serial">04</span>
                 <div className="service-icon">
-                  <GrCode />
+                  <RiMoneyDollarCircleFill />
                 </div>
-                <h3>App Development</h3>
+                <h3>Simple Pricing</h3>
                 <p>
-                  How you transform your business as tech, consumer, habits
-                  industry dynamic change, Find out from.
+                  We believe in transparency and simplicity when it comes to
+                  pricing. Our straightforward pricing structure ensures there
+                  are no hidden costs or surprises. With clear packages tailored
+                  to your needs, you can easily choose the best solution for
+                  your business without the hassle of complicated fees.
                 </p>
               </div>
               {/* End Single Service */}
@@ -352,12 +369,16 @@ export default function Services() {
                 </svg>
                 <span className="serial">05</span>
                 <div className="service-icon">
-                  <i className="lni lni-network" />
+                  <MdDevices />
                 </div>
-                <h3>Networking Solutions</h3>
+                <h3>Fully Responsive</h3>
                 <p>
-                  How you transform your business as tech, consumer, habits
-                  industry dynamic change, Find out from.
+                  Our websites are designed to deliver a seamless experience
+                  across all devices. Whether it’s a desktop, tablet, or
+                  smartphone, we ensure your website looks stunning and
+                  functions flawlessly. With a fully responsive design, your
+                  audience can connect with your brand anytime, without
+                  compromise.
                 </p>
               </div>
               {/* End Single Service */}
@@ -412,12 +433,15 @@ export default function Services() {
                 </svg>
                 <span className="serial">06</span>
                 <div className="service-icon">
-                  <i className="lni lni-code" />
+                  <PiMaskHappyFill />
                 </div>
-                <h3>Website Development</h3>
+                <h3>User Friendly</h3>
                 <p>
-                  How you transform your business as tech, consumer, habits
-                  industry dynamic change, Find out from.
+                  We create websites that are intuitive and easy to navigate,
+                  ensuring a smooth experience for all users. With thoughtful
+                  layouts and streamlined functionality, we make it simple for
+                  your visitors to find what they need, keeping them engaged and
+                  satisfied with every interaction.
                 </p>
               </div>
               {/* End Single Service */}
