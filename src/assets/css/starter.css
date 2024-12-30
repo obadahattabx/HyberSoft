@@ -4,7 +4,7 @@
 ===========================*/
 :root {
   --font-family: "Inter", sans-serif;
-  --primary: #7e7e7e;
+  --primary: #14451e;
   --primary-dark: #1c3ab6;
   --primary-light: #e2f1ff;
   --accent: #00d4d7;
@@ -22,7 +22,7 @@
   --caution: #dbbb25;
   --caution-dark: #d58f15;
   --caution-light: #fbf9e4;
-  --error: #e6185e;
+  --error: #18804c;
   --error-dark: #bf1257;
   --error-light: #fce4eb;
   --black: #1d1d1d;
@@ -253,4 +253,3 @@ p {
   height: 40px;
   line-height: 40px;
 }
-

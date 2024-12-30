@@ -1,4 +1,6 @@
+import { FaMapMarkerAlt } from "react-icons/fa";
 import "./footer-01.css";
+import { MdOutlineMail, MdOutlinePhone } from "react-icons/md";
 export default function Footer() {
   return (
     <>
@@ -66,15 +68,16 @@ export default function Footer() {
                 <div className="footer-contact">
                   <h6 className="footer-title">Help &amp; Suuport</h6>
                   <ul>
-                    <li>
-                      <i className="lni lni-map-marker" /> Madison Street,
-                      NewYork, USA
+                    <li className="ps-2 ">
+                      <FaMapMarkerAlt /> Madison Street, NewYork, USA
                     </li>
-                    <li>
-                      <i className="lni lni-phone-set" /> +88 556 88545
+                    <li className="ps-2">
+                      <MdOutlinePhone /> +88 556 88545
                     </li>
-                    <li>
-                      <i className="lni lni-envelope" /> support@uideck.com
+
+                    <li className="ps-2 d-flex  justify-content-center align-items-center gap-2">
+                      <MdOutlineMail />
+                      support@uideck.com
                     </li>
                   </ul>
                 </div>

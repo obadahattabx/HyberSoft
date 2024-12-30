@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import "./navbar-03.css";
+import { Link } from "react-scroll";
 export default function Navbar() {
   const btnNavbar = useRef(null);
   const handleNavbar = () => {
@@ -7,7 +8,7 @@ export default function Navbar() {
   };
   return (
     <>
-      <section className="navbar-area navbar-three">
+      <section className="navbar-area navbar-three fixed-top ">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -62,13 +63,16 @@ export default function Navbar() {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="javascript:void(0)">Services</a>
+                      <Link to="service">Services</Link>
                     </li>
                     <li className="nav-item">
-                      <a href="javascript:void(0)">Contact us</a>
+                      <Link to="feature">Features</Link>
                     </li>
                     <li className="nav-item">
-                      <a href="javascript:void(0)">About us</a>
+                      <Link to="contact">Contact us</Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="javascript:void(0)">About us</Link>
                     </li>
                   </ul>
                 </div>

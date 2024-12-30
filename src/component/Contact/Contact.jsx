@@ -1,4 +1,12 @@
+import { FaMapMarkerAlt } from "react-icons/fa";
 import "./Contact.css";
+import { MdOutlineMail, MdOutlinePhone } from "react-icons/md";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaWhatsapp,
+} from "react-icons/fa6";
 export default function Contact() {
   return (
     <>
@@ -17,7 +25,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          
+
           <div className="row">
             <div className="col-xl-8 col-lg-7 pt-2 pe-2">
               <div
@@ -103,11 +111,11 @@ export default function Contact() {
                 <h3 className="title">Contact Information</h3>
               </div>
               <div className=" contact-info">
-                <ul className="info cont-info">
+                <ul className="info cont-info ps-2">
                   <li>
                     <div className="single-info">
                       <div className="info-icon">
-                        <i className="lni lni-map-marker" />
+                        <FaMapMarkerAlt />
                       </div>
                       <div className="info-content">
                         <p className="text">
@@ -120,7 +128,7 @@ export default function Contact() {
                   <li>
                     <div className="single-info">
                       <div className="info-icon">
-                        <i className="lni lni-phone" />
+                        <MdOutlinePhone />
                       </div>
                       <div className="info-content">
                         <p className="text">+61 (8) 8234 3555</p>
@@ -130,7 +138,7 @@ export default function Contact() {
                   <li>
                     <div className="single-info">
                       <div className="info-icon">
-                        <i className="lni lni-phone-set" />
+                        <FaWhatsapp />
                       </div>
                       <div className="info-content">
                         <p className="text">+61 (8) 8234 3555</p>
@@ -140,7 +148,7 @@ export default function Contact() {
                   <li>
                     <div className="single-info">
                       <div className="info-icon">
-                        <i className="lni lni-envelope" />
+                        <MdOutlineMail />
                       </div>
                       <div className="info-content">
                         <p className="text">admin@uideck.com</p>
@@ -151,22 +159,17 @@ export default function Contact() {
                 <ul className="social mt-3 ms-2">
                   <li>
                     <a href="javascript:void(0)">
-                      <i className="lni lni-facebook-filled" />
+                      <FaFacebookF />
                     </a>
                   </li>
                   <li>
                     <a href="javascript:void(0)">
-                      <i className="lni lni-twitter-original" />
+                      <FaInstagram />
                     </a>
                   </li>
                   <li>
                     <a href="javascript:void(0)">
-                      <i className="lni lni-instagram-original" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">
-                      <i className="lni lni-linkedin-original" />
+                      <FaLinkedinIn />
                     </a>
                   </li>
                 </ul>
