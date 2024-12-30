@@ -6,7 +6,7 @@ import { BiSupport } from "react-icons/bi";
 export default function Service() {
   return (
     <>
-      <section className="service-area pt-140 pb-110">
+      <section className="service-area pt-110 pb-110">
         <div className="container">
           <div className="row">
             <div className="mx-auto col-xl-6 col-lg-7 col-md-10">
