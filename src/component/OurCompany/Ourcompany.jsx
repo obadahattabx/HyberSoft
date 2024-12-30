@@ -3,8 +3,8 @@ import img from "/src/assets/images/company/about.jpg";
 export default function Ourcompany() {
   return (
     <>
-      <div className="container-xxl py-5">
-        <div className="container">
+      <div className="container-xxl py-5 ">
+        <div className="container ">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
               <div className="about-img position-relative overflow-hidden p-5 pe-0">

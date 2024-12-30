@@ -7,7 +7,36 @@ import {
   FaLinkedinIn,
   FaWhatsapp,
 } from "react-icons/fa6";
+import emailjs from "emailjs-com";
+import { useRef } from "react";
+
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const serviceID = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
+    const userID = import.meta.env.VITE_APP_EMAILJS_USER_ID;
+    emailjs
+      .sendForm(
+        serviceID, // Replace with your EmailJS service ID
+        templateID, // Replace with your EmailJS template ID
+        form.current,
+        userID // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully!");
+          console.log(result.text);
+          form.current.reset(); // Clear the form after submission
+        },
+        (error) => {
+          alert("Message failed to send. Please try again.");
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <section id="contact" className="contact-section pt-130 pb-90">
@@ -38,6 +67,8 @@ export default function Contact() {
                   method="POST"
                   id="contact-form"
                   className="contact-form"
+                  ref={form}
+                  onSubmit={sendEmail}
                 >
                   <div className="row">
                     <div className="col-md-6">
@@ -77,7 +108,7 @@ export default function Contact() {
                       <div className="single-form">
                         <input
                           type="text"
-                          name="number"
+                          name="phone"
                           id="number"
                           className="form-input"
                           placeholder="Number"
