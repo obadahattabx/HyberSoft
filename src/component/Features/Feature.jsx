@@ -1,5 +1,5 @@
 import "./service-02.css";
-import { MdDevices, MdOutlineDesignServices } from "react-icons/md";
+import { MdDevices } from "react-icons/md";
 
 import { GrUpdate } from "react-icons/gr";
 
@@ -7,7 +7,7 @@ import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import { PiMaskHappyFill } from "react-icons/pi";
 import { BiCustomize } from "react-icons/bi";
 import { LuLeafyGreen } from "react-icons/lu";
-export default function Services() {
+export default function Feature() {
   const d = `M18.7,4.6c-0.9,0-1.5-0.7-1.6-1.5s0.7-1.5,1.5-1.6s1.5,0.7,1.6,1.5l0,0C20.2,3.9,19.5,4.6,18.7,4.6z M18.7,12.8
 	c-0.9,0-1.5-0.7-1.6-1.5s0.7-1.5,1.5-1.6s1.5,0.7,1.6,1.5l0,0C20.2,12.1,19.5,12.8,18.7,12.8L18.7,12.8z M18.7,21.1
 	c-0.9,0-1.5-0.7-1.6-1.5s0.7-1.5,1.5-1.6s1.5,0.7,1.6,1.5l0,0C20.2,20.4,19.5,21,18.7,21.1z M18.7,29.3c-0.9,0-1.5-0.7-1.6-1.5
