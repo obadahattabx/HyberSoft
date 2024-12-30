@@ -1,5 +1,5 @@
 import "./slider-01.css";
-import img from "../../assets/images/slider/1.jpg";
+import img from "../../assets/images/banner.png";
 import img2 from "../../assets/images/slider/2.jpg";
 import img3 from "../../assets/images/slider/3.jpg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
