@@ -6,6 +6,7 @@ import Feature from "./component/Features/Feature";
 import Contact from "./component/Contact/Contact";
 import OurCompany from "./component/OurCompany/Ourcompany";
 import { Element } from "react-scroll";
+import Counter from "./component/Counter/Counter";
 export default function App() {
   return (
     <>
@@ -16,6 +17,8 @@ export default function App() {
       <OurCompany />
       <Element name="service" />
       <Service />
+      <Element name="counter" />
+      <Counter/>
       <Element name="feature" />
       <Feature />
       <Element name="contact" />
