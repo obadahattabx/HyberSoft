@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import "./navbar-03.css";
-
 export default function Navbar() {
   const btnNavbar = useRef(null);
   const handleNavbar = () => {
@@ -14,7 +13,15 @@ export default function Navbar() {
             <div className="col-lg-12">
               <nav className="navbar navbar-expand-lg">
                 <a className="navbar-brand" href="javascript:void(0)">
-                  <img src="../assets/images/white-logo.svg" alt="Logo" />
+                  <img
+                    src="/src/assets/images/logo.png"
+                    alt="Logo"
+                    style={{
+                      width: "200px",
+                      height: "90px",
+                      backgroundImage: "",
+                    }}
+                  />
                 </a>
                 <button
                   ref={btnNavbar}
@@ -46,59 +53,22 @@ export default function Navbar() {
                         aria-label="Toggle navigation"
                         href="javascript:void(0)"
                       >
-                        About
+                        Home
                         <div className="sub-nav-toggler">
                           <span>
                             <i className="lni lni-chevron-down" />
                           </span>
                         </div>
                       </a>
-                      <ul className="sub-menu collapse" id="sub-nav5">
-                        <li>
-                          <a href="javascript:void(0)">Dropdown Menu 1</a>
-                        </li>
-                        <li>
-                          <a
-                            className="page-scroll active"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#sub-nav6"
-                            aria-controls="sub-nav6"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                            href="javascript:void(0)"
-                          >
-                            Dropdown Menu 2
-                            <div className="sub-nav-toggler">
-                              <span>
-                                <i className="lni lni-chevron-down" />
-                              </span>
-                            </div>
-                          </a>
-                          <ul className="sub-menu collapse" id="sub-nav6">
-                            <li>
-                              <a href="javascript:void(0)">Sub Menu 1</a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">Sub Menu 2</a>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">Sub Menu 3</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)">Dropdown Menu 3</a>
-                        </li>
-                      </ul>
                     </li>
                     <li className="nav-item">
                       <a href="javascript:void(0)">Services</a>
                     </li>
                     <li className="nav-item">
-                      <a href="javascript:void(0)">Resources</a>
+                      <a href="javascript:void(0)">Contact us</a>
                     </li>
                     <li className="nav-item">
-                      <a href="javascript:void(0)">Support</a>
+                      <a href="javascript:void(0)">About us</a>
                     </li>
                   </ul>
                 </div>
@@ -106,17 +76,17 @@ export default function Navbar() {
                   <ul>
                     <li>
                       <a href="javascript:void(0)">
-                        <i className="lni lni-twitter-original" />
+                        <i className="fa-brands fa-linkedin"></i>
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0)">
-                        <i className="lni lni-facebook-filled" />
+                        <i className="fa-brands fa-facebook"></i>
                       </a>
                     </li>
                     <li>
                       <a href="javascript:void(0)">
-                        <i className="lni lni-instagram-original" />
+                        <i className="fa-brands fa-instagram"></i>
                       </a>
                     </li>
                   </ul>
