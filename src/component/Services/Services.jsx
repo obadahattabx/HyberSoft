@@ -1,6 +1,11 @@
-import './service-02.css';
+import { FaLaptopCode } from "react-icons/fa6";
+import "./service-02.css";
+import { MdOutlineDesignServices } from "react-icons/md";
+import { LuLayoutDashboard } from "react-icons/lu";
+import { IoLayersSharp } from "react-icons/io5";
+import { GrCode } from "react-icons/gr";
 export default function Services() {
-    const d=`M18.7,4.6c-0.9,0-1.5-0.7-1.6-1.5s0.7-1.5,1.5-1.6s1.5,0.7,1.6,1.5l0,0C20.2,3.9,19.5,4.6,18.7,4.6z M18.7,12.8
+  const d = `M18.7,4.6c-0.9,0-1.5-0.7-1.6-1.5s0.7-1.5,1.5-1.6s1.5,0.7,1.6,1.5l0,0C20.2,3.9,19.5,4.6,18.7,4.6z M18.7,12.8
 	c-0.9,0-1.5-0.7-1.6-1.5s0.7-1.5,1.5-1.6s1.5,0.7,1.6,1.5l0,0C20.2,12.1,19.5,12.8,18.7,12.8L18.7,12.8z M18.7,21.1
 	c-0.9,0-1.5-0.7-1.6-1.5s0.7-1.5,1.5-1.6s1.5,0.7,1.6,1.5l0,0C20.2,20.4,19.5,21,18.7,21.1z M18.7,29.3c-0.9,0-1.5-0.7-1.6-1.5
 	s0.7-1.5,1.5-1.6s1.5,0.7,1.6,1.5l0,0C20.2,28.6,19.5,29.3,18.7,29.3L18.7,29.3z M18.7,37.5c-0.9,0-1.5-0.7-1.6-1.5s0.7-1.5,1.5-1.6
@@ -33,158 +38,393 @@ export default function Services() {
 	C4.3,77.8,3.6,78.5,2.7,78.5L2.7,78.5L2.7,78.5z`;
   return (
     <>
- <section className="services-area services-two">
-  {/*======  Start Section Title Six ======*/}
-  <div className="section-title-six">
-    <div className="container">
-      <div className="row">
-        <div className="col-12">
-          <div className="content">
-            <h3>What we offer?</h3>
-            <h2 className="fw-bold">What services we provide</h2>
-            <p>There are many variations of passages of Lorem
-              Ipsum available, but the majority have suffered alteration in some form.</p>
+      <section className="services-area services-two">
+        {/*======  Start Section Title Six ======*/}
+        <div className="section-title-six">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <div className="content">
+                  <h3>What we offer?</h3>
+                  <h2 className="fw-bold">What services we provide</h2>
+                  <p>
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* row */}
+          </div>
+          {/* container */}
+        </div>
+        {/*======  End Section Title Six ======*/}
+        <div className="container">
+          <div className="row">
+            <div
+              className="col-lg-4 col-md-6 col-12 wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              {/* Start Single Service */}
+              <div className="single-service">
+                <svg
+                  className="shape"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 21.5 79.6"
+                  style={{ enableBackground: "new 0 0 21.5 79.6" }}
+                  xmlSpace="preserve"
+                >
+                  <style
+                    type="text/css"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t",
+                    }}
+                  />
+                  <path className="st0" d={d} />
+                </svg>
+                <svg
+                  className="shape2"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 21.5 79.6"
+                  style={{ enableBackground: "new 0 0 21.5 79.6" }}
+                  xmlSpace="preserve"
+                >
+                  <style
+                    type="text/css"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t",
+                    }}
+                  />
+                  <path className="st0" d={d} />
+                </svg>
+                <span className="serial">01</span>
+                <div className="service-icon">
+                  <MdOutlineDesignServices />
+                </div>
+                <h3>Graphics Design</h3>
+                <p>
+                  How you transform your business as tech, consumer, habits
+                  industry dynamic change, Find out from.
+                </p>
+              </div>
+              {/* End Single Service */}
+            </div>
+            <div
+              className="col-lg-4 col-md-6 col-12 wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              {/* Start Single Service */}
+              <div className="single-service">
+                <svg
+                  className="shape"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 21.5 79.6"
+                  style={{ enableBackground: "new 0 0 21.5 79.6" }}
+                  xmlSpace="preserve"
+                >
+                  <style
+                    type="text/css"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t",
+                    }}
+                  />
+                  <path className="st0" d={d} />
+                </svg>
+                <svg
+                  className="shape2"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 21.5 79.6"
+                  style={{ enableBackground: "new 0 0 21.5 79.6" }}
+                  xmlSpace="preserve"
+                >
+                  <style
+                    type="text/css"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t",
+                    }}
+                  />
+                  <path className="st0" d={d} />
+                </svg>
+                <span className="serial">02</span>
+                <div className="service-icon">
+                  <LuLayoutDashboard />
+                </div>
+                <h3>Product Design</h3>
+                <p>
+                  How you transform your business as tech, consumer, habits
+                  industry dynamic change, Find out from.
+                </p>
+              </div>
+              {/* End Single Service */}
+            </div>
+            <div
+              className="col-lg-4 col-md-6 col-12 wow fadeInUp"
+              data-wow-delay=".6s"
+            >
+              {/* Start Single Service */}
+              <div className="single-service">
+                <svg
+                  className="shape"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 21.5 79.6"
+                  style={{ enableBackground: "new 0 0 21.5 79.6" }}
+                  xmlSpace="preserve"
+                >
+                  <style
+                    type="text/css"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t",
+                    }}
+                  />
+                  <path className="st0" d={d} />
+                </svg>
+                <svg
+                  className="shape2"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 21.5 79.6"
+                  style={{ enableBackground: "new 0 0 21.5 79.6" }}
+                  xmlSpace="preserve"
+                >
+                  <style
+                    type="text/css"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t",
+                    }}
+                  />
+                  <path className="st0" d={d} />
+                </svg>
+                <span className="serial">03</span>
+                <div className="service-icon">
+                  <IoLayersSharp />
+                </div>
+                <h3>UI &amp; UX Design</h3>
+                <p>
+                  How you transform your business as tech, consumer, habits
+                  industry dynamic change, Find out from.
+                </p>
+              </div>
+              {/* End Single Service */}
+            </div>
+            <div
+              className="col-lg-4 col-md-6 col-12 wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              {/* Start Single Service */}
+              <div className="single-service">
+                <svg
+                  className="shape"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 21.5 79.6"
+                  style={{ enableBackground: "new 0 0 21.5 79.6" }}
+                  xmlSpace="preserve"
+                >
+                  <style
+                    type="text/css"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t",
+                    }}
+                  />
+                  <path className="st0" d={d} />
+                </svg>
+                <svg
+                  className="shape2"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 21.5 79.6"
+                  style={{ enableBackground: "new 0 0 21.5 79.6" }}
+                  xmlSpace="preserve"
+                >
+                  <style
+                    type="text/css"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t",
+                    }}
+                  />
+                  <path className="st0" d={d} />
+                </svg>
+                <span className="serial">04</span>
+                <div className="service-icon">
+                  <GrCode />
+                </div>
+                <h3>App Development</h3>
+                <p>
+                  How you transform your business as tech, consumer, habits
+                  industry dynamic change, Find out from.
+                </p>
+              </div>
+              {/* End Single Service */}
+            </div>
+            <div
+              className="col-lg-4 col-md-6 col-12 wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              {/* Start Single Service */}
+              <div className="single-service">
+                <svg
+                  className="shape"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 21.5 79.6"
+                  style={{ enableBackground: "new 0 0 21.5 79.6" }}
+                  xmlSpace="preserve"
+                >
+                  <style
+                    type="text/css"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t",
+                    }}
+                  />
+                  <path className="st0" d={d} />
+                </svg>
+                <svg
+                  className="shape2"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 21.5 79.6"
+                  style={{ enableBackground: "new 0 0 21.5 79.6" }}
+                  xmlSpace="preserve"
+                >
+                  <style
+                    type="text/css"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t",
+                    }}
+                  />
+                  <path className="st0" d={d} />
+                </svg>
+                <span className="serial">05</span>
+                <div className="service-icon">
+                  <i className="lni lni-network" />
+                </div>
+                <h3>Networking Solutions</h3>
+                <p>
+                  How you transform your business as tech, consumer, habits
+                  industry dynamic change, Find out from.
+                </p>
+              </div>
+              {/* End Single Service */}
+            </div>
+            <div
+              className="col-lg-4 col-md-6 col-12 wow fadeInUp"
+              data-wow-delay=".6s"
+            >
+              {/* Start Single Service */}
+              <div className="single-service">
+                <svg
+                  className="shape"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 21.5 79.6"
+                  style={{ enableBackground: "new 0 0 21.5 79.6" }}
+                  xmlSpace="preserve"
+                >
+                  <style
+                    type="text/css"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t",
+                    }}
+                  />
+                  <path className="st0" d={d} />
+                </svg>
+                <svg
+                  className="shape2"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 21.5 79.6"
+                  style={{ enableBackground: "new 0 0 21.5 79.6" }}
+                  xmlSpace="preserve"
+                >
+                  <style
+                    type="text/css"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t",
+                    }}
+                  />
+                  <path className="st0" d={d} />
+                </svg>
+                <span className="serial">06</span>
+                <div className="service-icon">
+                  <i className="lni lni-code" />
+                </div>
+                <h3>Website Development</h3>
+                <p>
+                  How you transform your business as tech, consumer, habits
+                  industry dynamic change, Find out from.
+                </p>
+              </div>
+              {/* End Single Service */}
+            </div>
           </div>
         </div>
-      </div>
-      {/* row */}
-    </div>
-    {/* container */}
-  </div>
-  {/*======  End Section Title Six ======*/}
-  <div className="container">
-    <div className="row">
-      <div className="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".2s">
-        {/* Start Single Service */}
-        <div className="single-service">
-          <svg className="shape" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.5 79.6" style={{enableBackground: 'new 0 0 21.5 79.6'}} xmlSpace="preserve">
-            <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t" }} />
-            <path className="st0" d={d} />
-          </svg>
-          <svg className="shape2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.5 79.6" style={{enableBackground: 'new 0 0 21.5 79.6'}} xmlSpace="preserve">
-            <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t" }} />
-            <path className="st0" d={d} />
-          </svg>
-          <span className="serial">01</span>
-          <div className="service-icon">
-            <i className="lni lni-laptop" />
-          </div>
-          <h3>Graphics Design</h3>
-          <p>How you transform your business as tech, consumer, habits industry dynamic change, Find out
-            from.</p>
-        </div>
-        {/* End Single Service */}
-      </div>
-      <div className="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
-        {/* Start Single Service */}
-        <div className="single-service">
-          <svg className="shape" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.5 79.6" style={{enableBackground: 'new 0 0 21.5 79.6'}} xmlSpace="preserve">
-            <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t" }} />
-            <path className="st0" d={d} />
-          </svg>
-          <svg className="shape2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.5 79.6" style={{enableBackground: 'new 0 0 21.5 79.6'}} xmlSpace="preserve">
-            <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t" }} />
-            <path className="st0" d={d}/>
-          </svg>
-          <span className="serial">02</span>
-          <div className="service-icon">
-            <i className="lni lni-layout" />
-          </div>
-          <h3>Product Design</h3>
-          <p>How you transform your business as tech, consumer, habits industry dynamic change, Find out
-            from.</p>
-        </div>
-        {/* End Single Service */}
-      </div>
-      <div className="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
-        {/* Start Single Service */}
-        <div className="single-service">
-          <svg className="shape" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.5 79.6" style={{enableBackground: 'new 0 0 21.5 79.6'}} xmlSpace="preserve">
-            <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t" }} />
-            <path className="st0" d={d} />
-          </svg>
-          <svg className="shape2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.5 79.6" style={{enableBackground: 'new 0 0 21.5 79.6'}} xmlSpace="preserve">
-            <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t" }} />
-            <path className="st0" d={d} />
-          </svg>
-          <span className="serial">03</span>
-          <div className="service-icon">
-            <i className="lni lni-layers" />
-          </div>
-          <h3>UI &amp; UX Design</h3>
-          <p>How you transform your business as tech, consumer, habits industry dynamic change, Find out
-            from.</p>
-        </div>
-        {/* End Single Service */}
-      </div>
-      <div className="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".2s">
-        {/* Start Single Service */}
-        <div className="single-service">
-          <svg className="shape" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.5 79.6" style={{enableBackground: 'new 0 0 21.5 79.6'}} xmlSpace="preserve">
-            <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t" }} />
-            <path className="st0" d={d} />
-          </svg>
-          <svg className="shape2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.5 79.6" style={{enableBackground: 'new 0 0 21.5 79.6'}} xmlSpace="preserve">
-            <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t" }} />
-            <path className="st0" d={d} />
-          </svg>
-          <span className="serial">04</span>
-          <div className="service-icon">
-            <i className="lni lni-app-store" />
-          </div>
-          <h3>App Development</h3>
-          <p>How you transform your business as tech, consumer, habits industry dynamic change, Find out
-            from.</p>
-        </div>
-        {/* End Single Service */}
-      </div>
-      <div className="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
-        {/* Start Single Service */}
-        <div className="single-service">
-          <svg className="shape" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.5 79.6" style={{enableBackground: 'new 0 0 21.5 79.6'}} xmlSpace="preserve">
-            <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t" }} />
-            <path className="st0" d={d} />
-          </svg>
-          <svg className="shape2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.5 79.6" style={{enableBackground: 'new 0 0 21.5 79.6'}} xmlSpace="preserve">
-            <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t" }} />
-            <path className="st0" d={d} />
-          </svg>
-          <span className="serial">05</span>
-          <div className="service-icon">
-            <i className="lni lni-network" />
-          </div>
-          <h3>Networking Solutions</h3>
-          <p>How you transform your business as tech, consumer, habits industry dynamic change, Find out
-            from.</p>
-        </div>
-        {/* End Single Service */}
-      </div>
-      <div className="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
-        {/* Start Single Service */}
-        <div className="single-service">
-          <svg className="shape" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.5 79.6" style={{enableBackground: 'new 0 0 21.5 79.6'}} xmlSpace="preserve">
-            <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t" }} />
-            <path className="st0" d={d} />
-          </svg>
-          <svg className="shape2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.5 79.6" style={{enableBackground: 'new 0 0 21.5 79.6'}} xmlSpace="preserve">
-            <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t\t\t\t\t\t\t\t.st0 {\n\t\t\t\t\t\t\t\t\tfill: #155BD5;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t" }} />
-            <path className="st0" d={d} />
-          </svg>
-          <span className="serial">06</span>
-          <div className="service-icon">
-            <i className="lni lni-code" />
-          </div>
-          <h3>Website Development</h3>
-          <p>How you transform your business as tech, consumer, habits industry dynamic change, Find out
-            from.</p>
-        </div>
-        {/* End Single Service */}
-      </div>
-    </div>
-  </div>
-</section>
-
-
+      </section>
     </>
-  )
+  );
 }
