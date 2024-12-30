@@ -1,4 +1,5 @@
 
+import Contact from './component/Contact/Contact';
 import Footer from './component/Footer/Footer';
 import Home from './component/Home/Home';
 import Navbar from './component/Navbar/Navbar';
@@ -11,6 +12,7 @@ export default function App() {
     <Home/>
     <Service/>
     <Services/>
+    <Contact/>
     <Footer/>
     </>
   )
