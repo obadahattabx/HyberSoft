@@ -1,0 +1,109 @@
+
+.service-area .single-service {
+  border-radius: 5px;
+  background: #fff;
+  padding: 50px 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  border: 1px solid rgba(124, 134, 154, 0.25);
+  transition: all 0.3s ease-out 0s;
+  box-shadow: 0px 3px 35px rgba(218, 222, 228, 0.3);
+}
+
+.service-area .single-service:hover {
+  background-color: #FF6B6B;
+  border-color: #FF6B6B;
+}
+
+.service-area .single-service:hover .icon {
+  color: #fff;
+}
+
+.service-area .single-service:hover .service-content h3, .service-area .single-service:hover .service-content p {
+  color: #fff;
+}
+
+.service-area .single-service .icon {
+  font-size: 60px;
+  color: #FF6B6B;
+  transition: all 0.3s ease-out 0s;
+}
+
+.service-area .single-service .service-content h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-out 0s;
+}
+
+.service-area .single-service .service-content p {
+  transition: all 0.3s ease-out 0s;
+}
+
+.pt-140 {
+    padding-top: 140px;
+}
+.pb-110 {
+  padding-bottom: 110px;
+}
+
+.section-title h1 {
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+.section-title p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 60px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.service-area .single-service {
+  border-radius: 5px;
+  background: #fff;
+  padding: 50px 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  border: 1px solid rgba(124, 134, 154, 0.25);
+  transition: all 0.3s ease-out 0s;
+  box-shadow: 0px 3px 35px rgba(218, 222, 228, 0.3);
+}
+
+.service-area .single-service:hover {
+  background-color: #FF6B6B;
+  border-color: #FF6B6B;
+}
+
+.service-area .single-service:hover .icon {
+  color: #fff;
+}
+
+.service-area .single-service:hover .service-content h3, .service-area .single-service:hover .service-content p {
+  color: #fff;
+}
+
+.service-area .single-service .icon {
+  font-size: 60px;
+  color: #FF6B6B;
+  transition: all 0.3s ease-out 0s;
+}
+
+.service-area .single-service .service-content h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-out 0s;
+}
+
+.service-area .single-service .service-content p {
+  transition: all 0.3s ease-out 0s;
+}
+.service-area .single-service:hover .service-content h3, .service-area .single-service:hover .service-content p {
+  color: #fff;
+}
