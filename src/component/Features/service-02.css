@@ -3,7 +3,7 @@
 ===========================*/
 .services-two {
   position: relative;
-  background-color: var(--light-2);
+  background-color: var(--white);
   padding: 100px 0;
   /* Section Title Six */
 }
@@ -16,13 +16,26 @@
   z-index: 5;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .services-two {
+    padding-top: 450px;
+  }
+
   .services-two .section-title-six {
     margin-bottom: 45px;
   }
 }
+
 @media (max-width: 767px) {
+  .services-two {
+    padding-top: 450px;
+  }
   .services-two .section-title-six {
     margin-bottom: 35px;
+  }
+}
+@media (max-width: 567px) {
+  .services-two {
+    padding-top: 1000px;
   }
 }
 .services-two .section-title-six h3 {
@@ -188,5 +201,3 @@
 .services-two .single-service a:hover {
   letter-spacing: 1px;
 }
-
-

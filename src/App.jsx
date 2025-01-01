@@ -18,7 +18,7 @@ export default function App() {
       <Element name="service" />
       <Service />
       <Element name="counter" />
-      <Counter/>
+      <Counter isScroledCounter={"isScroledCounter"} />
       <Element name="feature" />
       <Feature />
       <Element name="contact" />

@@ -1,6 +1,7 @@
 import { FaMapMarkerAlt } from "react-icons/fa";
 import "./footer-01.css";
 import { MdOutlineMail, MdOutlinePhone } from "react-icons/md";
+import { Link } from "react-scroll";
 export default function Footer() {
   return (
     <>
@@ -12,12 +13,19 @@ export default function Footer() {
                 <div className="f-about">
                   <div className="footer-logo">
                     <a href="javascript:void(0)">
-                      <img src="../assets/images/footer/logo.svg" alt="Logo" />
+                      <img
+                        src="/src/assets/images/logoDark.png"
+                        alt="Logo"
+                        style={{
+                          width: "30%",
+                        }}
+                      />
                     </a>
                   </div>
                   <p className="text">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    HyberSoft is a leading web and app development company
+                    dedicated to delivering innovative, reliable, and
+                    user-friendly digital solutions.
                   </p>
                 </div>
               </div>
@@ -26,16 +34,16 @@ export default function Footer() {
                   <h6 className="footer-title">Company</h6>
                   <ul>
                     <li>
-                      <a href="javascript:void(0)">Our Company</a>
+                      <Link to="OurCompany">Our Company</Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Services</a>
+                      <Link to="service">Services</Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Features</a>
+                      <Link to="feature">Features</Link>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Contact us</a>
+                      <Link to="contact">Contact us</Link>
                     </li>
                   </ul>
                 </div>

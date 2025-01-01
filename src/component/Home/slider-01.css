@@ -141,8 +141,8 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--primary);
-  opacity: 0.2;
+  background-color: var(--dark-3);
+  opacity: 0;
 }
 @media (max-width: 767px) {
   .slider-one .bd-example .carousel .carousel-inner .carousel-item {
@@ -210,6 +210,8 @@
   .text {
   color: var(--white);
   display: block;
+  font-size: 18px;
+  font-weight: bold;
   margin: 20px 0;
 }
 .slider-one

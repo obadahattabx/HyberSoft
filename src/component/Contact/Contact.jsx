@@ -8,35 +8,75 @@ import {
   FaWhatsapp,
 } from "react-icons/fa6";
 import emailjs from "emailjs-com";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
+import SuccessMessage from "./SuccessMessage";
+// import SuccessMessage from "./SuccessMessage";
 
 export default function Contact() {
-  const form = useRef();
+  const serviceID = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
+  const templateID = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
+  const userID = import.meta.env.VITE_APP_EMAILJS_USER_ID;
+  const [loading, setLoading] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    const serviceID = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
-    const templateID = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
-    const userID = import.meta.env.VITE_APP_EMAILJS_USER_ID;
-    emailjs
-      .sendForm(
-        serviceID, // Replace with your EmailJS service ID
-        templateID, // Replace with your EmailJS template ID
-        form.current,
-        userID // Replace with your EmailJS user ID
-      )
-      .then(
-        (result) => {
-          alert("Message sent successfully!");
-          console.log(result.text);
-          form.current.reset(); // Clear the form after submission
-        },
-        (error) => {
-          alert("Message failed to send. Please try again.");
-          console.log(error.text);
-        }
-      );
-  };
+  const formRef = useRef(null); // Create a ref for the form
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    },
+    validationSchema: Yup.object({
+      name: Yup.string()
+        .min(3, "Name must be at least 3 characters")
+        .required("Name is required"),
+      email: Yup.string()
+        .email("Invalid email address")
+        .required("Email is required"),
+      phone: Yup.string()
+        .matches(/^\d{10,15}$/, "Phone must be 10-15 digits")
+        .required("Phone is required"),
+      subject: Yup.string()
+        .min(3, "Subject must be at least 3 characters")
+        .required("Subject is required"),
+      message: Yup.string()
+        .min(10, "Message must be at least 10 characters")
+        .required("Message is required"),
+    }),
+    onSubmit: () => {
+      setLoading(true);
+      emailjs
+        .sendForm(
+          serviceID, // Replace with your EmailJS service ID
+          templateID, // Replace with your EmailJS template ID
+          formRef.current,
+          userID // Replace with your EmailJS user ID
+        )
+        .then(
+          (result) => {
+            // alert("asdasdasd");
+            setLoading(false);
+            console.log(result.text);
+            setShowSuccessMessage(true);
+            setTimeout(() => {
+              setShowSuccessMessage(false);
+            }, 1500);
+            formik.resetForm();
+            // Clear the form after submission
+          },
+          (error) => {
+            alert("asdasdasd");
+            setLoading(false);
+            console.log(error.text);
+          }
+        );
+    },
+  });
+
   return (
     <>
       <section id="contact" className="contact-section pt-130 pb-90">
@@ -63,12 +103,12 @@ export default function Contact() {
                 data-wow-delay=".2s"
               >
                 <form
+                  ref={formRef}
                   action="#"
                   method="POST"
                   id="contact-form"
                   className="contact-form"
-                  ref={form}
-                  onSubmit={sendEmail}
+                  onSubmit={formik.handleSubmit}
                 >
                   <div className="row">
                     <div className="col-md-6">
@@ -77,9 +117,16 @@ export default function Contact() {
                           type="text"
                           name="name"
                           id="name"
+                          value={formik.values.name}
+                          onChange={formik.handleChange}
                           className="form-input"
                           placeholder="Your Name"
                         />
+                        {formik.touched.name && formik.errors.name && (
+                          <div className="text-danger ps-4">
+                            {formik.errors.name}
+                          </div>
+                        )}
                       </div>
                     </div>
                     <div className="col-md-6">
@@ -88,9 +135,16 @@ export default function Contact() {
                           type="email"
                           name="email"
                           id="email"
+                          value={formik.values.email}
+                          onChange={formik.handleChange}
                           className="form-input"
                           placeholder="Your E-mail"
                         />
+                        {formik.touched.email && formik.errors.email && (
+                          <div className="text-danger ps-4">
+                            {formik.errors.email}
+                          </div>
+                        )}
                       </div>
                     </div>
                     <div className="col-md-6">
@@ -99,9 +153,16 @@ export default function Contact() {
                           type="text"
                           name="subject"
                           id="subject"
+                          value={formik.values.subject}
+                          onChange={formik.handleChange}
                           className="form-input"
                           placeholder="Subject"
                         />
+                        {formik.touched.subject && formik.errors.subject && (
+                          <div className="text-danger ps-4">
+                            {formik.errors.subject}
+                          </div>
+                        )}
                       </div>
                     </div>
                     <div className="col-md-6">
@@ -109,10 +170,17 @@ export default function Contact() {
                         <input
                           type="text"
                           name="phone"
-                          id="number"
+                          id="phone"
+                          value={formik.values.phone}
+                          onChange={formik.handleChange}
                           className="form-input"
                           placeholder="Number"
                         />
+                        {formik.touched.phone && formik.errors.phone && (
+                          <div className="text-danger ps-4">
+                            {formik.errors.phone}
+                          </div>
+                        )}
                       </div>
                     </div>
                     <div className="col-md-12">
@@ -121,17 +189,62 @@ export default function Contact() {
                           name="message"
                           id="message"
                           className="form-input"
+                          value={formik.values.message}
+                          onChange={formik.handleChange}
                           rows={7}
                           placeholder="Message"
-                          defaultValue={""}
                         />
+                        {formik.touched.message && formik.errors.message && (
+                          <div className="text-danger ps-4">
+                            {formik.errors.message}
+                          </div>
+                        )}
                       </div>
                     </div>
                     <div className="col-md-12">
                       <div className="submit-btn">
-                        <button className="main-btn btn-hover" type="submit">
-                          Submit Message
+                        <button
+                          className="main-btn btn-hover"
+                          type="submit"
+                          disabled={loading}
+                        >
+                          {loading == false ? (
+                            <div>
+                              <span>Submit Message</span>
+                            </div>
+                          ) : (
+                            <div
+                              className="spinner-border text-primary"
+                              role="status"
+                            >
+                              <span className="sr-only">Loading...</span>
+                            </div>
+                          )}
                         </button>
+
+                        {showSuccessMessage == true ? (
+                          <div
+                            style={{
+                              opacity: "1",
+                              visibility: "visible",
+                              transition:
+                                "opacity 1s ease-in-out, visibility 0s 0s",
+                            }}
+                          >
+                            <SuccessMessage />
+                          </div>
+                        ) : (
+                          <div
+                            style={{
+                              opacity: "0",
+                              visibility: "hidden",
+                              transition:
+                                "opacity 1s ease-in-out, visibility 0s 0.5s",
+                            }}
+                          >
+                            <SuccessMessage />
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>

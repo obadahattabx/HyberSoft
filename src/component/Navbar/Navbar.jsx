@@ -3,8 +3,14 @@ import "./navbar-03.css";
 import { Link } from "react-scroll";
 export default function Navbar() {
   const btnNavbar = useRef(null);
+  const closeMenu = useRef(null);
   const handleNavbar = () => {
     btnNavbar.current.classList.toggle("active");
+  };
+  const handleNavbar1 = () => {
+    btnNavbar.current.classList.toggle("active");
+    closeMenu.current.classList.toggle("show");
+    // btnNavbar.current.ariaExpanded = "true";
   };
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -25,7 +31,7 @@ export default function Navbar() {
             ? "bg-white/70 backdrop-blur-md shadow-md" // When scrolled: Transparent white, blurred background, and shadow
             : "bg-transparent"
         } `}
-        style={{ transition: " 0.7s" }}
+        style={{ transition: " 0.7s", zIndex: "1000", opacity: "0.9" }}
       >
         <div className="container">
           <div className="row">
@@ -36,7 +42,7 @@ export default function Navbar() {
                     src="/src/assets/images/logo.png"
                     alt="Logo"
                     style={{
-                      width: "200px",
+                      width: "80px",
                       height: "70px",
                       backgroundImage: "",
                     }}
@@ -58,24 +64,35 @@ export default function Navbar() {
                   <span className="toggler-icon" />
                 </button>
                 <div
+                  ref={closeMenu}
                   className="collapse navbar-collapse sub-menu-bar"
                   id="navbarThree"
                 >
                   <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
-                      <Link to="Home">Home</Link>
+                      <Link to="Home" onClick={handleNavbar1}>
+                        Home
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="OurCompany">About us</Link>
+                      <Link to="OurCompany" onClick={handleNavbar1}>
+                        About us
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="service">Services</Link>
+                      <Link to="service" offset={-60} onClick={handleNavbar1}>
+                        Services
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="feature">Features</Link>
+                      <Link to="feature" onClick={handleNavbar1}>
+                        Features
+                      </Link>
                     </li>
                     <li className="nav-item">
-                      <Link to="contact">Contact us</Link>
+                      <Link to="contact" onClick={handleNavbar1}>
+                        Contact us
+                      </Link>
                     </li>
                   </ul>
                 </div>

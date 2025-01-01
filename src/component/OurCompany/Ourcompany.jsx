@@ -1,5 +1,5 @@
 import "./Ourcompany.css";
-import img from "/src/assets/images/company/about.jpg";
+import img from "/src/assets/images/company/about.png";
 export default function Ourcompany() {
   return (
     <>

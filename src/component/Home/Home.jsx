@@ -1,7 +1,7 @@
 import "./slider-01.css";
-import img from "../../assets/images/banner.png";
-import img2 from "../../assets/images/slider/2.jpg";
-import img3 from "../../assets/images/slider/3.jpg";
+import img from "../../assets/images/company/banner1.png";
+import img2 from "../../assets/images/company/banner4.png";
+import img3 from "../../assets/images/company/banner3.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 export default function Home() {
   // const styles={backgroundImage: `url(${/assets/images/})`}
@@ -26,19 +26,20 @@ export default function Home() {
             <div className="carousel-inner">
               <div
                 className="carousel-item bg_cover active"
-                style={{ backgroundImage: `url(${img})` }}
+                style={{ backgroundImage: `url(${img3})` }}
               >
                 <div className="carousel-caption">
                   <div className="container">
                     <div className="row justify-content-center">
                       <div className="col-xl-6 col-lg-7 col-sm-10">
                         <h2 className="carousel-title">
-                          Unlimited Friendly &amp; Easy Customisable
+                          {/* HyberSoft: Your Gateway to Digital Excellence */}
                         </h2>
                         <p className="text">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard.
+                          {/* Welcome to HyberSoft, where innovation meets
+                          expertise. Our mission is to help businesses thrive in
+                          the digital era by delivering cutting-edge web and app
+                          solutions tailored to your needs. */}
                         </p>
                       </div>
                     </div>
@@ -58,31 +59,14 @@ export default function Home() {
                     <div className="row justify-content-center">
                       <div className="col-xl-6 col-lg-7 col-sm-10">
                         <h2 className="carousel-title">
-                          Unlimited Friendly &amp; Easy Customisable
+                          Turning Ideas into Digital Masterpieces
                         </h2>
                         <p className="text">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard.
+                          Every project starts with an idea. At HyberSoft, we
+                          take that idea and transform it into a fully-fledged
+                          digital solution, combining creativity, strategy, and
+                          technical precision.
                         </p>
-                        <ul className="carousel-btn rounded-buttons">
-                          <li>
-                            <a
-                              className="btn primary-btn rounded-full"
-                              href="javascript:void(0)"
-                            >
-                              GET STARTED
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              className="btn primary-btn-outline rounded-full"
-                              href="javascript:void(0)"
-                            >
-                              DOWNLOAD
-                            </a>
-                          </li>
-                        </ul>
                       </div>
                     </div>
                     {/* row */}
@@ -94,38 +78,21 @@ export default function Home() {
               {/* carousel-item */}
               <div
                 className="carousel-item bg_cover"
-                style={{ backgroundImage: `url(${img3})` }}
+                style={{ backgroundImage: `url(${img})` }}
               >
                 <div className="carousel-caption">
                   <div className="container">
                     <div className="row justify-content-center">
                       <div className="col-xl-6 col-lg-7 col-sm-10">
                         <h2 className="carousel-title">
-                          Unlimited Friendly &amp; Easy Customisable
+                          HyberSoft: Your Gateway to Digital Excellence
                         </h2>
                         <p className="text">
-                          Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard.
+                          Welcome to HyberSoft, where innovation meets
+                          expertise. Our mission is to help businesses thrive in
+                          the digital era by delivering cutting-edge web and app
+                          solutions tailored to your needs.
                         </p>
-                        <ul className="carousel-btn rounded-buttons">
-                          <li>
-                            <a
-                              className="btn primary-btn rounded-full"
-                              href="javascript:void(0)"
-                            >
-                              GET STARTED
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              className="btn primary-btn-outline rounded-full"
-                              href="javascript:void(0)"
-                            >
-                              DOWNLOAD
-                            </a>
-                          </li>
-                        </ul>
                       </div>
                     </div>
                     {/* row */}

@@ -41,7 +41,10 @@ export default function Feature() {
 	C4.3,77.8,3.6,78.5,2.7,78.5L2.7,78.5L2.7,78.5z`;
   return (
     <>
-      <section className="services-area services-two">
+      <section
+        className="services-area services-two "
+        style={{ marginTop: "120px" }}
+      >
         {/*======  Start Section Title Six ======*/}
         <div className="section-title-six">
           <div className="container">

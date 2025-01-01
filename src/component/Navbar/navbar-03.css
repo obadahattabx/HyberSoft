@@ -156,7 +156,7 @@
   padding-left: 8px;
 }
 .navbar-area.navbar-three .navbar .navbar-nav .nav-item a.active {
-  border: 1px solid rgba(255, 255, 255, 0.281);
+  border: 1px solid rgba(255, 255, 255, 0.381);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px),
   (max-width: 767px) {

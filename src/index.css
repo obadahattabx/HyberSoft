@@ -1,3 +1,26 @@
-.body {
-  background-color: #444242;
+::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scrollbar */
+  transition: opacity 0.3s ease;
+}
+
+/* Background of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #ababd2;
+  border-radius: 6px;
+}
+
+/* Handle of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #1e3bfa;
+  border-radius: 6px;
+}
+
+/* Handle hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Hide scrollbar initially */
+hide-scrollbar ::-webkit-scrollbar {
+  opacity: 0; /* Completely hide the scrollbar */
 }

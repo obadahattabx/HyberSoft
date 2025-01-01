@@ -1,21 +1,21 @@
 /* start section video */
 .video-area .video-wrapper {
-  background-image: url("/src/assets/images/counter.jpg");
+  background-image: url("/src/assets/images/company/download.png");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   position: relative;
   z-index: 1;
 }
 
 .video-area .video-wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(51, 63, 87, 0.5);
+  background: rgba(51, 63, 87, 0.2);
   z-index: -1;
 }
 
@@ -29,14 +29,14 @@
   line-height: 80px;
   border-radius: 50%;
   background: #fff;
-  color: #FF6B6B;
+  color: #ff6b6b;
   position: relative;
   margin: auto;
   z-index: 1;
 }
 
 .video-area .video-wrapper .video-content .video-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -53,21 +53,20 @@
 
 /* end section videio */
 .count-up-wrapper {
-  box-shadow: 0px 3px 25px rgba(203, 207, 213, 0.3);
-  background: #fff;
+  box-shadow: 0px 3px 25px rgba(235, 236, 238, 0.3);
+  background-image: url(/src/assets/images/company/counter.png);
   border-radius: 5px;
   position: absolute;
-  z-index: 9999;
+  z-index: 100;
   margin-top: -80px;
   /* top: 0; */
   left: 0%;
   right: 0%;
   /* display: inline-block; */
 }
-.upraper{
-    position: relative;
-    width: 100%;
-    
+.upraper {
+  position: relative;
+  width: 100%;
 }
 .count-up-wrapper .single-counter {
   text-align: center;
@@ -76,20 +75,18 @@
 
 .count-up-wrapper .single-counter .icon {
   font-size: 60px;
-  color: #FF6B6B;
+  color: var(--white);
 }
 
 .count-up-wrapper .single-counter span {
   font-size: 16px;
   font-weight: 600;
+  color: #fff;
 }
 
 .count-up-wrapper .single-counter span.count {
   font-size: 40px;
   font-weight: 700;
-  color: #333F57;
+  color: #ffffff;
   display: block;
 }
-
-
-
